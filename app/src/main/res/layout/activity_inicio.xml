@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/porcentaje"
+        android:layout_above="@id/procesbar"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/procesbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+</RelativeLayout>
