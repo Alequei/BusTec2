@@ -12,7 +12,7 @@
         android:layout_height="53dp"
         android:layout_alignTop="@+id/bgHeader"
         android:layout_alignEnd="@+id/bgHeader"
-        android:layout_marginTop="573dp"
+        android:layout_marginTop="640dp"
         android:layout_marginEnd="170dp"
         android:background="@drawable/btn_login"
         android:elevation="10dp"
@@ -22,7 +22,7 @@
         android:id="@+id/bgHeader"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:background="@drawable/header_register"
+        android:background="@drawable/header_register2"
         android:elevation="5dp" />
 
     <TextView
@@ -38,9 +38,6 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-
-
-
     <ImageView
         android:id="@+id/circle1"
         android:layout_width="134dp"
@@ -50,7 +47,6 @@
         android:layout_marginTop="-5dp"
         android:src="@drawable/circletrasparente" />
 
-
     <ImageView
         android:id="@+id/circle3"
         android:layout_width="182dp"
@@ -59,8 +55,16 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="-80dp"
         android:layout_marginBottom="-30dp"
-        android:src="@drawable/circle" />
-
+        android:src="@drawable/circletrasparente" />
+    <ImageView
+        android:id="@+id/circle4"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circletrasparente" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -86,6 +90,14 @@
                     android:orientation="vertical"
                     android:paddingBottom="50dp">
 
+                    <ImageButton
+                        android:id="@+id/imagenperfil"
+                        android:layout_width="82dp"
+                        android:layout_height="88dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/perfil"
+                        android:src="@drawable/ic_add_" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -96,6 +108,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/ingresocorreo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -112,6 +125,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/ingresodeusuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -128,6 +142,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/ingresodeclave"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -144,6 +159,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/verificarclave"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -165,12 +181,21 @@
                 android:elevation="10dp">
 
                 <Button
+                    android:id="@+id/butonregister"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
                     android:background="@drawable/btn_login"
-                    android:text="Sign up"
+                    android:text="Registrarse"
                     android:textAllCaps="false"
                     android:textColor="@color/colorWhite" />
+                <ProgressBar
+                    android:id="@+id/processbarregis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    />
 
             </RelativeLayout>
 

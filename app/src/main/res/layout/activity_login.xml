@@ -111,6 +111,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/ingresouser"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -127,6 +128,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/ingresopass"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -168,7 +170,7 @@
                     android:id="@+id/btRegister"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/btn_login"
+                    android:background="@drawable/perfil"
                     android:src="@drawable/ic_add" />
             </RelativeLayout>
 
@@ -184,6 +186,7 @@
                 android:textSize="14sp" />
 
             <Button
+                android:id="@+id/logeogmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvForgot"
@@ -196,6 +199,7 @@
                 android:drawableLeft="@drawable/ic_email_black_24dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+
                 android:text="LOGIN CON GMAIL"
                 android:textColor="@color/colorPurple" />
         </RelativeLayout>
